@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ParsePromiseKitSwift"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "A PromiseKit category for the Parse SDK in Swift using Promise<T>"
   s.homepage     = "https://github.com/angeloashmore/Parse-PromiseKit-Swift"
   s.license      = { :type => "MIT", :file => "LICENSE" }

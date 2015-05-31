@@ -183,7 +183,7 @@ extension PFUser {
         }
     }
 
-    static func promiseLogOut() -> Promise<Bool> {
+    public static func promiseLogOut() -> Promise<Bool> {
         return Promise { fulfill, reject in
             self.logOutInBackgroundWithBlock(ParsePromiseKitClosures.ErrorPassthroughBlock(fulfill: fulfill, reject: reject, passthrough: true))
         }
