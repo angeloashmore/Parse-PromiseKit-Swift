@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author       = "Angelo Ashmore"
 
-  s.source       = { :git => "https://github.com/angeloashmore/Parse-PromiseKit-Swift", :tag => s.version }
+  s.source       = { :git => "https://github.com/angeloashmore/Parse-PromiseKit-Swift.git", :tag => s.version }
   s.source_files = "ParsePromiseKitSwift/*.swift"
 
   s.ios.deployment_target = "8.0"
