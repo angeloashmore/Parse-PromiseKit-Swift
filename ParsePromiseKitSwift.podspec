@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/doorbellapp/ParsePromiseKitSwift.git", :tag => s.version }
   s.source_files = "ParsePromiseKit/*.swift"
 
-  s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.9"
+  s.platform     = :ios, "8.0"
 
   s.frameworks   = "Foundation"
 
