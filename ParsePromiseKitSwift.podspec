@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "Foundation"
 
   s.dependency "PromiseKit", "~> 2.0"
+  s.dependency "PromiseKitClosures", "~> 1.0"
   s.dependency "Parse", "~> 1.7"
   s.dependency "ParseUI", "~> 1.1.1"
 end
