@@ -26,7 +26,7 @@ the appropriate completion block (with a few exceptions).
 
 `user.signUpInBackground` becomes `user.promiseSignUp`
 
-``swift
+```swift
 query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
   if let error = error {
     // handle error
@@ -34,17 +34,17 @@ query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
     // do something with objects
   }
 }
-``
+```
 
 becomes
 
-``swift
+```swift
 query.promiseFindObjects().then { objects -> Void in
   // do something with objects
 }.catch { error -> Void in
   // handle error
 }
-``
+```
 
 License
 -------
