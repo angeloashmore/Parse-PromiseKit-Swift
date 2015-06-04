@@ -186,7 +186,7 @@ extension PFUser {
 
     public static func promiseLogOut() -> Promise<Bool> {
         return Promise { fulfill, reject in
-            self.logOutInBackgroundWithBlock(PromiseKitClosures.PassthroughBlock(fulfill: fulfill, reject: reject, passthrough: true))
+            self.logOutInBackgroundWithBlock(PromiseKitClosures.ErrorBlock(fulfill: fulfill, reject: reject, passthrough: true))
         }
     }
 }
@@ -202,7 +202,7 @@ extension PFImageView {
 extension PFPurchase {
     public static func promiseBuyProduct(productIdentifier: String) -> Promise<String> {
         return Promise { fulfill, reject in
-            self.buyProduct(productIdentifier, block: PromiseKitClosures.PassthroughBlock(fulfill: fulfill, reject: reject, passthrough: productIdentifier))
+            self.buyProduct(productIdentifier, block: PromiseKitClosures.ErrorBlock(fulfill: fulfill, reject: reject, passthrough: productIdentifier))
         }
     }
 

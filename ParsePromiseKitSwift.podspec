@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "ParsePromiseKitSwift"
   s.module_name  = "ParsePromiseKit"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "A PromiseKit category for the Parse SDK in Swift using Promise<T>"
   s.homepage     = "https://github.com/doorbellapp/ParsePromiseKitSwift"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.frameworks   = "Foundation"
 
   s.dependency "PromiseKit", "~> 2.0"
-  s.dependency "PromiseKitClosures", "~> 1.0"
+  s.dependency "PromiseKitClosures", "~> 1.1"
   s.dependency "Parse", "~> 1.7"
   s.dependency "ParseUI", "~> 1.1.1"
 end
