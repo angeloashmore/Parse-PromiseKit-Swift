@@ -1,9 +1,3 @@
-# ParsePromiseKitSwift
-A PromiseKit category for the Parse SDK in Swift using Promise&lt;T>
-
-*Note: This is a semi-port of [Parse+PromiseKit](https://github.com/hathway/Parse-PromiseKit).*
-
-
 ParsePromiseKitSwift
 ====================
 `ParsePromiseKitSwift` is a category that adds Swift [PromiseKit](http://promisekit.org/) integration to the
@@ -26,7 +20,7 @@ the appropriate completion block (with a few exceptions).
 
 `user.signUpInBackground` becomes `user.promiseSignUp`
 
-``swift
+```swift
 query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
   if let error = error {
     // handle error
@@ -34,17 +28,17 @@ query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
     // do something with objects
   }
 }
-``
+```
 
 becomes
 
-``swift
+```swift
 query.promiseFindObjects().then { objects -> Void in
   // do something with objects
 }.catch { error -> Void in
   // handle error
 }
-``
+```
 
 License
 -------
